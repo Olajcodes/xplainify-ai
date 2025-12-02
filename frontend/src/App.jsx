@@ -64,9 +64,9 @@ export default function App() {
     <div className="h-screen flex flex-col bg-xlight font-inter">
 
       {/* Header */}
-      <header className="bg-blue-200 text-white px-6 py-4 shadow-lg flex justify-between">
-        <h1 className="text-blue-500 text-xl font-bold tracking-wide">Xplainify AI</h1>
-        <div className="text-blue-00  text-xl font-bold"> ...Your Intelligent Multi-Persona Learning Companion</div>
+      <header className="bg-blue-200 text-white px-2 py-4 shadow-lg flex justify-between gap-10">
+        <h1 className="text-blue-500 md:text-xl sm:text-sm font-bold tracking-wide">Xplainify AI</h1>
+        <div className="text-blue-00 md:text-xl sm:text-sm   font-bold"> ...Your Intelligent Multi-Persona Learning Companion</div>
       </header>
 
       {/* Chat Area */}
@@ -97,7 +97,7 @@ export default function App() {
       <footer className="bg-blue p-3 border-t flex gap-1">
         <input
           type="text"
-          className="flex-1 p-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue"
+          className=" w-full mx-auto p-2 border rounded-xl   focus:outline-none focus:ring-2 focus:ring-blue"
           placeholder="Ask Xplainify something..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -106,7 +106,7 @@ export default function App() {
 
         <button
           onClick={sendMessage}
-          className="bg-xblue text-white px-6 rounded-xl hover:bg-xdark transition"
+          className="bg-blue-600 text-white px-6 rounded-xl hover:bg-dark transition"
         >
           Send
         </button>
